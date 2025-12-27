@@ -1,0 +1,172 @@
+.about {
+    background-color: #dfb992;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {
+    color: #322f2d;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.subtitle {
+    color: #322f2d;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.text {
+    color: #322f2d;
+    font-size: 16px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.image {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1);
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    color: #322f2d;
+}
+
+.list li {
+    margin-bottom: 10px;
+    padding-left: 22px;
+    position: relative;
+    font-size: 16px;
+}
+
+.list li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #322f2d;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background-color: #322f2d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #826857;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1200px) {
+    .block {
+        gap: 20px;
+    }
+    .image {
+        width: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .block {
+        gap: 15px;
+    }
+    .image {
+        width: 400px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .block:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+    .image {
+        width: 100%;
+    }
+    .text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .img {
+        width: 100%;
+    }
+    .subtitle {
+        font-size: 20px;
+        text-align: center;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}

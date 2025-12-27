@@ -1,0 +1,112 @@
+.order {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #dfb992; 
+    padding: 30px;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.h2 {
+    text-align: center;
+    color: #322f2d;
+    margin-bottom: 25px;
+}
+
+.form {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px 0;
+    border: 2px solid #dfb992;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form:focus {
+    border-color: #322f2d;
+    outline: none;
+    box-shadow: 0 0 5px rgba(209, 71, 163, 0.5);
+}
+
+.text {
+    font-weight: bold;
+    color: #322f2d;
+}
+
+.btn {
+    width: 100%;
+    background-color: #322f2d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #826857;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1200px) {
+    .order {
+        padding: 25px;
+        max-width: 450px;
+    }
+    .form {
+        font-size: 15px;
+    }
+    .btn {
+        font-size: 17px;
+        padding: 11px;
+    }
+}
+
+@media (max-width: 992px) {
+    .order {
+        padding: 20px;
+        max-width: 400px;
+        margin: 40px auto;
+    }
+    .h2 {
+        font-size: 24px;
+    }
+    .form {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order {
+        padding: 15px;
+        max-width: 90%;
+        margin: 30px auto;
+    }
+    .h2 {
+        font-size: 22px;
+    }
+    .form {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

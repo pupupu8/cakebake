@@ -1,0 +1,115 @@
+.products {
+    padding: 40px 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #322f2d;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.productCard {
+    background-color: #dfb992;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.productCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.productCard h3 {
+    font-size: 20px;
+    color: #322f2d;
+    margin-bottom: 10px;
+}
+
+.productCard p {
+    font-size: 15px;
+    color: #322f2d;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.productCard button {
+    background-color: #322f2d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard button:hover {
+    background-color: #2a2725;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1200px) {
+    .productsGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 992px) {
+    .productsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        padding: 30px 20px;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .productCard {
+        padding: 18px;
+    }
+
+    .productCard h3 {
+        font-size: 18px;
+    }
+
+    .productCard p {
+        font-size: 14px;
+    }
+}
